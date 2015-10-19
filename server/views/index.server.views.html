@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp" ng-strict-di>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords"    content="Gene, Nakagaki, Portfolio, Computer, Science, Programming">
+  <meta name="description" content="Gene Nakagaki Computer Science Portfolio">
+  <meta name="author"      content="Gene Nakagaki">
+
+  <base href="/">
+
+  <title>Gene Nakagaki Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+  
+  <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/projects.css">
+
+</head>
+
+<body>
+  <div ng-controller="HeaderCtrl">
+    <div ng-include="template.url"></div>
+  </div>
+
+  <div class="view-container">
+    <div ng-view class="view-animate"></div ng-view>
+  </div><!-- view-container -->
+
+  <!-- assets -->
+  <script src="/assets/js/skills.js"></script>
+  <script src="/assets/js/projects.js"></script>
+
+  <!-- Angular lib -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="/assets/libs/angular-animate/angular-animate.js"></script>
+  <script src="/assets/libs/angular-resource/angular-resource.js"></script>
+  <script src="/assets/libs/angular-route/angular-route.js"></script>
+  <script src="/assets/libs/angular-sanitize/angular-sanitize.min.js"></script>
+
+  <!-- Angular -->
+  <script src="/app/mainApp.js"></script>
+
+  <script src="/app/shared/resourceService.js"></script>
+  <script src="/app/shared/activeLinkDirective.js"></script>
+
+  <script src="/app/shared/header/headerModule.js"></script>  
+  <script src="/app/shared/header/headerAnimate.js"></script>
+  <script src="/app/shared/header/headerController.js"></script>
+
+  <script src="/app/views/config.js"></script>
+  <script src="/app/views/viewAnimate.js"></script>
+  <script src="/app/views/viewController.js"></script>
+
+  <script src="/app/views/home/homeController.js"></script>
+
+  <!-- Projects -->
+  <script src="/app/views/projects/projectsController.js"></script>
+  <script src="/app/views/projects/projectsAnimate.js"></script>
+
+    <!-- Project Detail -->
+    <script src="/app/views/projects/projectDetail/projectDetailController.js"></script>
+
+  <script src="/app/views/about/aboutController.js"></script>
+  <script src="/app/views/contact/contactController.js"></script>
+
+  <!-- GSAP -->
+  <script src="/assets/libs/gsap/src/minified/TweenMax.min.js"></script>
+  <!-- // <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> -->
+
+
+  </body>
+</html>
