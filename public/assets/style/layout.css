@@ -1,0 +1,54 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+a {
+  color: #47A;
+}
+
+p {
+  line-height: 24px;
+}
+
+h2, h2 a {
+  line-height: 60px;
+  font-size: 28px;
+}
+
+h3, h3 a {
+  line-height: 40px;
+  font-size: 24px;
+}
+
+hr {
+  border-top-color: transparent;
+  border-left-width: 0;
+}
+
+div.view-container {
+  width: 1024px;
+  margin: 0 auto 0;
+}
+
+div.container {
+  margin: 10px 0 32px;
+}
+
+div.container p {
+  margin: 0px 0 20px; 
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

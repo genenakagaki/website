@@ -26,14 +26,17 @@ app.use(bodyParser.json());
 
 // views
 app.engine('html', swig.renderFile);
-app.set('views', './server/views');
+app.set('views', './server/core/views');
 app.set('view engine', 'html');
 
 // set routes
-require('./server/routes/public.server.routes')(app);
+require('./server/core/routes/public.server.routes')(app);
+require('./server/mail/routes/mail.server.routes')(app);
 
 // set path for static files
-app.use(express.static(path.resolve(__dirname + './public')));
+app.use(express.static(path.resolve(__dirname + '/public')));
+
+console.log(path.resolve(__dirname + './public'));
 
 app.get(/.+/, function(req, res) {
     res.redirect('/');

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp" ng-strict-di>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords"    content="Gene, Nakagaki, Portfolio, Computer, Science, Programming">
+  <meta name="description" content="Gene Nakagaki Computer Science Portfolio">
+  <meta name="author"      content="Gene Nakagaki">
+
+  <base href="/">
+
+  <title>Gene Nakagaki Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="/assets/style/reset.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/layout.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/style/header.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/style/home.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/project.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style/contact.css">
+
+</head>
+
+<body>
+  <div ng-controller="HeaderCtrl">
+    <div ng-include="template"></div>
+  </div>
+
+  <div class="view-container">
+    <div ng-view class="view-animate"></div ng-view>
+  </div><!-- view-container -->
+
+  <div ng-controller="FooterCtrl">
+    <div ng-include="template"></div>
+  </div>
+
+  <!-- Angular lib -->
+  <script src="/assets/libs/angular/angular.min.js"></script>
+  <script src="/assets/libs/angular-animate/angular-animate.min.js"></script>
+  <script src="/assets/libs/angular-resource/angular-resource.min.js"></script>
+  <script src="/assets/libs/angular-route/angular-route.min.js"></script>
+  <script src="/assets/libs/angular-sanitize/angular-sanitize.min.js"></script>
+
+  <!-- GSAP lib -->
+  <script src="/assets/libs/gsap/src/minified/TweenMax.min.js"></script>
+
+  <!-- Angular -->
+  <script src="/app/mainApp.js"></script>
+
+  <!-- header -->
+  <script src="/app/shared/header/headerModule.js"></script>  
+  <script src="/app/shared/header/headerCtrl.js"></script>
+  <script src="/app/shared/header/topFixedScrollDirective.js"></script>
+  
+  <!-- footer -->
+  <script src="/app/shared/footer/footerModule.js"></script>
+  <script src="/app/shared/footer/footerCtrl.js"></script>
+
+  <script src="/app/skills/skillService.js"></script>
+
+  <script src="/app/projects/projectModule.js"></script>
+  <script src="/app/projects/projectService.js"></script>
+  <script src="/app/projects/projectDetail/projectDetailCtrl.js"></script>
+  <script src="/app/projects/projectList/projectListCtrl.js"></script>
+
+  <script src="/app/contact/contactModule.js"></script>
+  <script src="/app/contact/contactCtrl.js"></script>
+
+  <script src="/app/home/homeCtrl.js"></script>
+
+</body>
+</html>

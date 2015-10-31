@@ -1,0 +1,27 @@
+#home {
+
+}
+
+#home div.intro img {
+  margin: 4px 24px 4px 16px;
+  box-shadow: 2px 2px 10px;
+}
+
+#home div.intro p {
+  margin: 20px 0 0;
+}
+
+#home div.skills ul li {
+  margin: 0 20px 0;
+  display: inline-block;
+  box-shadow: 2px 2px 10px #888;
+}
+
+#home div.skills ul li a {
+  width: 100px;
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}

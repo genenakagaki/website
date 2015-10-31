@@ -1,0 +1,40 @@
+<div id="home">
+  <div class="container intro clearfix">
+    <h2>Hi, I am Gene</h2>
+    <img class="float-left"
+         src="https://avatars1.githubusercontent.com/u/9728444?v=3&s=460"
+         alt="Gene Nakagaki"
+         width="200" height="200">
+    <p>
+      I am in my senior year at Lehman College majoring in Computer Science. <br>
+    </p>
+  </div><!-- intro -->
+  <hr>
+
+  <div class="container projects">
+    <h2>Projects</h2>
+    <p>
+      These are some of the projects I have worked on.
+    </p>
+
+    <div ng-controller="ProjectListCtrl">
+      <div ng-include="template"></div>
+    </div>
+  </div><!-- projects -->
+  <hr>
+
+  <div class="container skills">
+    <h2>Skills</h2>
+    <p>These are some of the technical skills I have the most experience with.</p>
+    <ul>
+      <li ng-repeat="skill in skillList"
+          class="clearfix">
+        <a href=""> 
+          <img src="{{skill.img}}" alt="{{skill.title}}" width="100" height="100">
+          {{skill.title}}
+        </a>
+      </li>
+    </ul>
+  </div><!-- skills -->
+  <hr>
+</div>

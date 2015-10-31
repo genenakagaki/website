@@ -1,0 +1,29 @@
+#contact {
+  width: 800px;
+  margin: 0 auto 0;
+  background-color: #0F0;
+}
+
+#contact input {
+  width: 796px;
+  height: 30px;
+  font-size: 18px;
+}
+
+#contact input.submit {
+  width: 200px;
+  margin: 0 auto 0;
+}
+
+#contact textarea {
+  width: 796px;
+  height: 300px;
+  padding-right: 0;
+  resize: none;
+
+  font-size: 18px;
+  font-family: arial, sans-serif;
+}
+
+#contact div.overlay {
+}

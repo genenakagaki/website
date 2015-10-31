@@ -1,0 +1,12 @@
+<div class="project-detail">
+  <h2>{{project.title}}</h2>
+
+  <ul class="skill-list">
+    <li ng-repeat="skill in project.skillList">
+      <a href="#">{{skill.title}}</a>
+    </li>
+  </ul>
+
+  <img class="float-left" src="{{project.img}}" alt="{{project.title}}" height="400">
+  <p>{{project.description}}</p>
+</div>

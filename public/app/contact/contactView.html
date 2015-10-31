@@ -1,0 +1,15 @@
+<div id="contact">
+  <form ng-submit="sendMail()">
+    <input type="text" name="email"   
+           ng-model="mail.email" placeholder="Your Email Address">
+    <br>
+    <input type="text" name="subject" 
+           ng-model="mail.subject" placeholder="Subject">
+    <br>
+    <textarea name="message" 
+              ng-model="mail.message" placeholder="Your message here"></textarea>
+    <br>
+    <input class="submit" type="submit" value="Submit">
+  </form>
+  <form-overlay control="directive"></form-overlay>
+</div>
