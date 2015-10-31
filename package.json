@@ -20,10 +20,6 @@
   ],
   "author": "Gene Nakagaki",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kagen47/website/issues"
-  },
-  "homepage": "https://github.com/kagen47/website#readme",
   "dependencies": {
     "body-parser": "^1.14.1",
     "compression": "^1.6.0",
@@ -31,5 +27,9 @@
     "morgan": "^1.6.1",
     "nodemailer": "^1.8.0",
     "swig": "^1.4.2"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.3"
   }
 }
