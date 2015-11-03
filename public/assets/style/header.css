@@ -12,13 +12,18 @@
   line-height: 50px;
 }
 
+#main-header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
 #main-header nav {
   width: 100%;
   margin: 0 auto 0;
   height: 50px;
   position: fixed;
   z-index: 3;
-  background-color: #AAA;
+  background-color: #888;
   box-shadow: 0px 6px 20px -6px;
 }
 
@@ -34,9 +39,14 @@
 #main-header nav li a {
   display: block;
   padding: 13px 20px 13px;
-  background-color: #000;
+  background-color: #888;
   
   text-decoration: none;
   font-size: 24px;
+  color: #FFF;
+}
+
+#main-header nav li a:hover {
+  background-color: #444;
   color: #0F0;
 }

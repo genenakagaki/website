@@ -10,12 +10,14 @@ angular.module('headerModule')
   }
 
   var homeLink      = new Link("Home",     "/");
-  var portfolioLink = new Link("Projects", "/projects");
+  var projectsLink  = new Link("Projects", "/projects");
   var aboutLink     = new Link("About",    "/about");
+  var contactLink   = new Link("Contact",  "#main-footer")
 
   $scope.linkList = [
     homeLink,
-    portfolioLink,
-    aboutLink
+    projectsLink,
+    aboutLink,
+    contactLink
   ];
 }]);
