@@ -18,10 +18,10 @@ angular.module('mainApp', [
       templateUrl: '/app/projects/projectDetail/projectDetailView.html',
       controller : 'ProjectDetailCtrl'
     })
-    // .when('/projects', {
-    //   templateUrl: '/app/views/projects/projectsView.html',
-    //   controller : 'ProjectsCtrl'
-    // })
+    .when('/projects', {
+      templateUrl: '/app/projects/projectsView.html',
+      controller : 'ProjectsCtrl'
+    })
     // .when('/about', {
     //   templateUrl: '/app/views/about/aboutView.html',
     //   controller : 'AboutCtrl'

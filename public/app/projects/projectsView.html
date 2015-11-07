@@ -1,0 +1,27 @@
+<div id="projects">
+
+  <ul class="skillCategories">
+    <li ng-repeat="category in categories">
+      <a href="" ng-click="setCategory(category)">{{category}}</a>
+    </li>
+  </ul><!-- .skillCategories -->
+
+  <ul class="skill-list">
+    <li ng-repeat="skill in skills"
+        ng-mouseenter="animateSkillHover(skill)"
+        ng-mouseleave="revertSkillHover(skill)"
+        ng-show="currentCategory === 'All' || skill.category === currentCategory"
+        ng-class="skill.animate">
+      <img ng-src="{{skill.img}}"
+           ng-attr-alt="{{skill.name}}"
+           width="50" height="50">
+      <span>{{skill.name}}</span>
+    </li>
+  </ul><!-- .skill-list -->
+
+  <div ng-controller="ProjectListCtrl">
+      <div ng-include="template"></div>
+    </div>
+
+
+</div><!-- #projects -->

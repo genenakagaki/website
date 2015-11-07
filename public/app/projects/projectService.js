@@ -22,7 +22,7 @@ angular.module('projectService', ['skillService'])
     };
   }
 
-  var skill = skillService.skillList();
+  var skill = skillService.findAll();
 
   var cardMatchingGame = new Project(
     'Card Matching Game', 
@@ -77,7 +77,7 @@ angular.module('projectService', ['skillService'])
   ];
 
   return {
-    projectList: function() {
+    findAll: function() {
       return projectList;
     },
     findProjectByName: function(name) {
