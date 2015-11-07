@@ -70,7 +70,7 @@ angular.module('projectService', ['skillService'])
   arcadeGame.setDescription('3D Arcade Game.  Final project for video game programming course at Lehman College.');
 
   var projectList = [
-    cardMatchingGame,
+    // cardMatchingGame,
     tetris,
     abtranet,
     arcadeGame
