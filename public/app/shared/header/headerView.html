@@ -1,12 +1,25 @@
-<header id="main-header">
+<header id="header">
   <h1><a href="/">Gene Nakagaki</a></h1>
-  <nav top-fixed-scroll>
-    <ul>
-      <li ng-repeat="link in linkList">
-        <a ng-href="{{link.url}}">
-          {{link.name}}
-        </a>
-      </li>
-    </ul>
-  </nav>
+
+  <div class="nav-wrapper" top-fixed-scroll>
+    <div class="nav-container clearfix">
+      <nav>
+        <ul>
+          <li ng-repeat="navLink in navLinkList">
+            <a ng-href="{{navLink.url}}">
+              {{navLink.name}}
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="ext-link-list">
+        <li ng-repeat="extLink in extLinkList">
+          <a ng-href="{{extLink.url}}">
+            {{extLink.name}}
+          </a>
+        </li>
+      </ul>
+    </div><!-- nav-container -->
+  </div><!-- nav-wrapper -->
 </header>
