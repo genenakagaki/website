@@ -26,12 +26,12 @@ app.use(bodyParser.json());
 
 // views
 app.engine('html', swig.renderFile);
-app.set('views', './server/core/views');
+app.set('views', './serverModules/core/views');
 app.set('view engine', 'html');
 
 // set routes
-require('./server/core/routes/public.server.routes')(app);
-require('./server/mail/routes/mail.server.routes')(app);
+require('./serverModules/core/routes/public.server.routes')(app);
+require('./serverModules/mail/routes/mail.server.routes')(app);
 
 // set path for static files
 app.use(express.static(path.resolve(__dirname + '/public')));

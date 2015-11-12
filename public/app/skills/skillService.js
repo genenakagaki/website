@@ -24,7 +24,7 @@ angular.module('skillService', [])
   var python     = new Skill('Python',      'python', '.svg',     category.language);
   var html5      = new Skill('HTML5',       'html5', '.svg',      category.language);
   var css3       = new Skill('CSS3',        'css3', '.svg',       category.language);
-  var mongodb    = new Skill('mongoDB',     'mongodb', '.svg',    category.database);
+  var mongodb    = new Skill('MongoDB',     'mongodb', '.svg',    category.database);
   var mysql      = new Skill('MySQL',       'mysql', '.svg',      category.database);
   var git        = new Skill('Git',         'git', '.svg',        category.vcs);
   var heroku     = new Skill('Heroku',      'heroku', '.svg',     category.paas);

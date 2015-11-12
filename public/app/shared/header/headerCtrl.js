@@ -13,7 +13,7 @@ angular.module('headerModule')
   var homeLink      = new NavLink('Home',     '/');
   var projectsLink  = new NavLink('Projects', '/projects');
   var aboutLink     = new NavLink('About',    '/about');
-  var contactLink   = new NavLink('Contact',  '#main-footer');
+  var contactLink   = new NavLink('Contact',  '#footer');
 
   $scope.navLinkList = [
     homeLink,

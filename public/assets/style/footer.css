@@ -1,9 +1,9 @@
-#main-footer {
+#footer {
   width: 100%;
   background-color: #ABC;
 }
 
-#main-footer div.container {
+#footer div.container {
   width: 1024px;
   margin: 0 auto 0;
   padding: 0 0 20px;
