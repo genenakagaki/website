@@ -15,8 +15,10 @@
 
       <ul class="ext-link-list">
         <li ng-repeat="extLink in extLinkList">
-          <a ng-href="{{extLink.url}}">
-            {{extLink.name}}
+          <a ng-href="{{extLink.url}}" target="_blank">
+            <img ng-src="{{extLink.img}}" 
+              width="40" height="40"
+              alt="{{extLink.name}}">
           </a>
         </li>
       </ul>

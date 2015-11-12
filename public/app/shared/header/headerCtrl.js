@@ -29,8 +29,16 @@ angular.module('headerModule')
     this.img  = img;
   }
 
-  var githubLink   = new ExtLink('GitHub',   'https://github.com/kagen47', '');
-  var linkedinLink = new ExtLink('Linkedin', '#', '');
+  var githubLink   = new ExtLink(
+    'GitHub',   
+    'https://github.com/kagen47', 
+    '/assets/img/extLink/github-icon.svg'
+  );
+  var linkedinLink = new ExtLink(
+    'LinkedIn', 
+    'https://www.linkedin.com/in/gene-nakagaki-b1569388', 
+    '/assets/img/extLink/linkedin-icon.png'
+  );
 
   $scope.extLinkList = [
     githubLink,

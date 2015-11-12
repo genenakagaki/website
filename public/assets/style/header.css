@@ -58,5 +58,16 @@
 }
 
 #header ul.ext-link-list {
+  padding-right: 20px;
   float: right;
+}
+
+#header ul.ext-link-list li a {
+  margin: 0;
+  padding: 3px 10px 3px;
+}
+
+#header ul.ext-link-list img {
+  margin: 0;
+  padding: 0;
 }
