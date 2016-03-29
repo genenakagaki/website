@@ -24,16 +24,27 @@ angular.module('projectService', ['skillService'])
 
   var skill = skillService.findAll();
 
-  var cardMatchingGame = new Project(
-    'Card Matching Game', 
-    'card-matching-game',
-    'https://github.com/kagen47/Flipismo'
+  var spotphotos = new Project(
+    'Spotphotos',
+    'spotphotos',
+    'https://github.com/kagen47/SpotPhotos'
   );
-  cardMatchingGame.setSkillList([
+  spotphotos.setSkillList([
     skillService.findSkillByName('objectiveC'),
     skillService.findSkillByName('git')
   ]);
-  cardMatchingGame.setDescription('iOS application of a card matching game.  Project from iOS programming class at Lehman College.');
+  spotphotos.setDescription('iOS application that displays photos from the most popular photo locations on Flickr.  Compatible with both iPad and iPhone.  Project from iOS programming class at Lehman College.')
+
+  var flipismo = new Project(
+    'Flipismo', 
+    'flipismo',
+    'https://github.com/kagen47/Flipismo'
+  );
+  flipismo.setSkillList([
+    skillService.findSkillByName('objectiveC'),
+    skillService.findSkillByName('git')
+  ]);
+  flipismo.setDescription('iOS application of a card matching game.  Project from iOS programming class at Lehman College.');
 
   var tetris = new Project(
     'Tetris',
@@ -70,7 +81,8 @@ angular.module('projectService', ['skillService'])
   arcadeGame.setDescription('3D Arcade Game.  Final project for video game programming course at Lehman College.');
 
   var projectList = [
-    // cardMatchingGame,
+    spotphotos,
+    flipismo,
     tetris,
     abtranet,
     arcadeGame
